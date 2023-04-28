@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "863618453961",
+    "project_id": "isken-328c1",
+    "storage_bucket": "isken-328c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863618453961:android:6c5b1ac10244cfc9589818",
+        "android_client_info": {
+          "package_name": "com.example.iscany"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863618453961-m32lcb5sl6f0c976kf04oqq4anbm2e3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iscany",
+            "certificate_hash": "0693f7688d45a31627f2221dfb0dfee4aae7a0d3"
+          }
+        },
+        {
+          "client_id": "863618453961-25flnq23gekvm18updt1bm2rjdec2hcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdslB7Vu2HZHvd2dYxWtYQ7Z5SK-US974"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863618453961-25flnq23gekvm18updt1bm2rjdec2hcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
