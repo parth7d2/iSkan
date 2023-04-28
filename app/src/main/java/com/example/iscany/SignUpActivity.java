@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class SignUpActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
+    String name;
 
     @Override
     public void onStart() {
@@ -31,6 +32,7 @@ public class SignUpActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
             Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+            intent.putExtra("name", name);
             startActivity(intent);
             finish();
         }
@@ -45,6 +47,8 @@ public class SignUpActivity extends AppCompatActivity {
         EditText edtPassword = findViewById(R.id.edt_password2);
         TextView txtLogin = findViewById(R.id.txt_LogIn);
         ProgressBar progressBar = findViewById(R.id.progressBar);
+        EditText edtName = findViewById(R.id.edt_name);
+        name = String.valueOf(edtName.getText());
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -73,6 +77,7 @@ public class SignUpActivity extends AppCompatActivity {
                                     Toast.makeText(SignUpActivity.this, "Authentication Sucessful.",
                                             Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                                    intent.putExtra("name", name);
                                     startActivity(intent);
                                     finish();
 
